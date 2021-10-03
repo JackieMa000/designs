@@ -14,6 +14,5 @@ set(EXTERNAL_DIR ${CMAKE_SOURCE_DIR}/externals)
 include(${EXTERNAL_DIR}/libcheck.cmake)
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
-include_directories(${CMAKE_SOURCE_DIR}/test)
 
 add_subdirectory(src)
