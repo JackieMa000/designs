@@ -10,7 +10,7 @@ type Mammal struct {
 
 func (m Mammal) print() {
 	fmt.Println("Printing...")
-	print("\t")
+	fmt.Print("\t")
 	m.speak()
 	fmt.Println("\tWeight: ", m.getWeight())
 }

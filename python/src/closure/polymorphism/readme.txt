@@ -1,0 +1,1 @@
+Simulates oop polymorphism by using closure.
