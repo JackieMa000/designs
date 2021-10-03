@@ -10,5 +10,7 @@ int main() {
     s->setWeight(s, 200);
     assert(s->getWeight(s) == 200);
 
+    s->delete(s);
+
     return 0;
 }

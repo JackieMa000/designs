@@ -6,8 +6,6 @@
 
 #include "mammal.h"
 
-struct Sheep;
-typedef struct Sheep sheep_t;
 static mammal_t *make_sheep(int weight);
 
 static void _Sheep_speak() {
