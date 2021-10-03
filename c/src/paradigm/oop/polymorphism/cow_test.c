@@ -3,6 +3,7 @@
 
 int main() {
     mammal_t *c = make_cow(100);
+    c->print(c);
     c->speak();
 
     assert(c->getWeight(c) == 100);

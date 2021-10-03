@@ -8,6 +8,13 @@ type Mammal struct {
 	setWeight func(int)
 }
 
+func (m Mammal) print() {
+	fmt.Println("Printing...")
+	print("\t")
+	m.speak()
+	fmt.Println("\tWeight: ", m.getWeight())
+}
+
 func Cow() Mammal {
 	weight := 100
 

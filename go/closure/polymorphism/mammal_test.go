@@ -6,6 +6,7 @@ import (
 
 func TestCow(t *testing.T) {
 	c := Cow()
+	c.print()
 	c.speak()
 
 	if c.getWeight() != 100 {
@@ -20,6 +21,7 @@ func TestCow(t *testing.T) {
 
 func TestSheep(t *testing.T) {
 	s := Sheep()
+	s.print()
 	s.speak()
 
 	if s.getWeight() != 50 {
