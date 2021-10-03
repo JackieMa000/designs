@@ -1,1 +1,3 @@
+add_subdirectory(class)
+add_subdirectory(inheritance)
 add_subdirectory(polymorphism)
