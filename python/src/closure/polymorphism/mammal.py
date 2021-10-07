@@ -1,5 +1,8 @@
+from typing import Callable
+
+
 class Mammal:
-    def __init__(self, speak, getWeight, setWeight):
+    def __init__(self, speak, getWeight: Callable[[], int], setWeight: Callable[[int], None]):
         self.speak = speak
         self.getWeight = getWeight
         self.setWeight = setWeight
@@ -11,35 +14,41 @@ class Mammal:
         print("\tWeight: {}".format(self.getWeight()))
 
 
-class Cow():
-    def __init__(self):
-        self.weight = 100
+class Cow:
+    weight = 100
 
-    def speak(self) -> None:
+    @staticmethod
+    def speak() -> None:
         print("momo~~ momo~~")
 
-    def getWeight(self) -> int:
-        return self.weight
+    @classmethod
+    def getWeight(cls) -> int:
+        return cls.weight
 
-    def setWeight(self, w: int) -> None:
-        self.weight = w
+    @classmethod
+    def setWeight(cls, w: int) -> None:
+        cls.weight = w
 
-    def __call__(self, *args, **kwargs):
-        return Mammal(self.speak, self.getWeight, self.setWeight)
+    @classmethod
+    def make(cls) -> Mammal:
+        return Mammal(cls.speak, cls.getWeight, cls.setWeight)
 
 
 class Sheep():
-    def __init__(self):
-        self.weight = 50
+    weight = 50
 
-    def speak(self) -> None:
+    @staticmethod
+    def speak() -> None:
         print("mee~~ mee~~")
 
-    def getWeight(self) -> int:
-        return self.weight
+    @classmethod
+    def getWeight(cls) -> int:
+        return cls.weight
 
-    def setWeight(self, w: int) -> None:
-        self.weight = w
+    @classmethod
+    def setWeight(cls, w: int) -> None:
+        cls.weight = w
 
-    def __call__(self, *args, **kwargs):
-        return Mammal(self.speak, self.getWeight, self.setWeight)
+    @classmethod
+    def make(cls) -> Mammal:
+        return Mammal(cls.speak, cls.getWeight, cls.setWeight)

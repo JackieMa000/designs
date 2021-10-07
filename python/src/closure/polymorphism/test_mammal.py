@@ -5,7 +5,7 @@ from closure.polymorphism.mammal import Cow, Sheep
 
 class MammalTestCase(TestCase):
     def test_cow(self):
-        c = Cow()()
+        c = Cow.make()
         c.print()
         c.speak()
 
@@ -15,7 +15,7 @@ class MammalTestCase(TestCase):
         self.assertEqual(200, c.getWeight())
 
     def test_sheep(self):
-        c = Sheep()()
+        c = Sheep.make()
         c.print()
         c.speak()
 
