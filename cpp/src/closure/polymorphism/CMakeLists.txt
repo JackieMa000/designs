@@ -1,0 +1,1 @@
+add_executable(closure1_test mammal_test.cpp)
