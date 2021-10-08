@@ -1,4 +1,3 @@
-//OOP Polymorphism simulation using closure
 #pragma once
 
 #include <iostream>
