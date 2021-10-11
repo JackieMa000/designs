@@ -1,3 +1,4 @@
+#include <cassert>
 #include "mammal.hpp"
 
 void test_cow();

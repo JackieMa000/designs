@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 # set the project name and version
-project(design-patterns-cpp VERSION 1.0)
+project(designs-cpp VERSION 1.0)
 
 ##### specify the C/C++ standard
 set(CMAKE_C_STANDARD 11)
@@ -14,8 +14,8 @@ include(sanitizer.cmake)
 include(CTest)
 
 # Dependencies: Solving external package dependencies
-set(EXTERNAL_DIR ${CMAKE_SOURCE_DIR}/externals)
-include(${EXTERNAL_DIR}/gtest.cmake)
+#set(EXTERNAL_DIR ${CMAKE_SOURCE_DIR}/externals)
+#include(${EXTERNAL_DIR}/gtest.cmake)
 
 include_directories(${CMAKE_SOURCE_DIR}/src)
 
