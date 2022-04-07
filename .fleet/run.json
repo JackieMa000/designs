@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "python run",
+            "type": "python",
+            "pythonInterpreterPath": "/Users/jackie/Dev/python_venv/bin/python",
+            "arguments": [],
+        },
+        {
+            "name": "python test",
+            "type": "python-tests",
+            "pythonInterpreterPath": "/Users/jackie/Dev/python_venv/bin/python",
+            "target": "",
+            "arguments": []
+        }
+    ]
+}
