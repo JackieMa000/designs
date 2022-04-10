@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.h": "c",
+			"*.py": "python",
+			"iosfwd": "cpp",
+			"vector": "cpp",
+			"includes": "cpp",
+			"functional": "cpp",
+			"iostream": "cpp",
+			"cassert": "cpp"
+		}
+	}
+}
