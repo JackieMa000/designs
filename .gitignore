@@ -4,3 +4,4 @@ target/
 out/
 *.pyc
 .DS_Store
+cpp/Testing/
