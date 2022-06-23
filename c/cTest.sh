@@ -1,8 +1,10 @@
-cd /Users/jackie/Dev/design-patterns/c/cmake-build-debug-coverage
+#!/usr/bin/env zsh
+
+cd /Users/jackie/Dev/designs/c/cmake-build-debug-llvm/
 
 #### Build All Targets ###
 /opt/homebrew/bin/cmake \
---build /Users/jackie/Dev/design-patterns/c/cmake-build-debug-coverage --target all -- -j 8
+--build /Users/jackie/Dev/designs/c/cmake-build-debug-llvm/ --target all -- -j 8
 
 ###### Run CTest   #####
 /opt/homebrew/bin/ctest \

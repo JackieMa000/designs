@@ -36,7 +36,7 @@ struct Cow {
 static void _Cow_delete(cow_t *c) { free(c); }
 
 // class method implementations
-static void _Sheep_speak() {
+static void _Cow_speak() {
     printf("moo~~ moo~~");
 }
 static int _Cow_getWeight(cow_t *c) {
@@ -58,7 +58,7 @@ cow_t *make_cow(int weight) {
     cow->weight = weight;
 
 //   methods
-    cow->speak = _Sheep_speak;
+    cow->speak = _Cow_speak;
     cow->getWeight = _Cow_getWeight;
     cow->setWeight = _Cow_setWeight;
 

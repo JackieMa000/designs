@@ -7,8 +7,10 @@ project(designs-cpp VERSION 1.0)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
+# Turn on sanitizer for debugging
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-#    include(sanitizer.cmake)
+    include(sanitizer.cmake)
+    message("sanitizer enabled..")
 endif ()
 
 # Enable cMake's CTest

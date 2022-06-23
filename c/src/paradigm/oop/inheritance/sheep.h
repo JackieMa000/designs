@@ -25,7 +25,7 @@ static void _Sheep_delete(sheep_t *s) {
     free(s);
 }
 
-static void _Sheep_speak() {
+static void _Cow_speak() {
     printf("mee~~ mee~~");
 }
 
@@ -44,7 +44,7 @@ sheep_t *make_sheep(int weight) {
 
     s->delete = _Sheep_delete;
 
-    s->m->speak = _Sheep_speak;
+    s->m->speak = _Cow_speak;
     s->getWool = _Sheep_getWool;
     s->produceWool = _Sheep_produceWool;
 

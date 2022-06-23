@@ -1,7 +1,6 @@
 #include <string>
 #include <iostream>
 #include <cassert>
-#include <utility>
 
 struct Person {
   std::string name;

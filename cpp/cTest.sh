@@ -1,8 +1,10 @@
-cd /Users/jackie/Dev/design-patterns/cpp/cmake-build-debug-coverage
+#!/usr/bin/env zsh
+
+cd /Users/jackie/Dev/designs/cpp/cmake-build-debug-llvm/
 
 #### Build All Targets ###
-/opt/homebrew/bin/cmake \
---build /Users/jackie/Dev/design-patterns/cpp/cmake-build-debug-coverage --target all -- -j 8
+# cmake --build <dir>:  build an already-generated project binary tree:
+/opt/homebrew/bin/cmake --build /Users/jackie/Dev/designs/cpp/cmake-build-debug-llvm/ --target all -- -j8
 
 ###### Run CTest   #####
 /opt/homebrew/bin/ctest \

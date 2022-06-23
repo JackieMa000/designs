@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "module": "src.closure.polymorphism.test_mammal",
-            "justMyCode": true,
+            "justMyCode": true
         },
         {
             "name": "Python: Current File",
@@ -18,6 +18,21 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Docker: Python - General",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "python": {
+                "pathMappings": [
+                    {
+                        "localRoot": "${workspaceFolder}",
+                        "remoteRoot": "/app"
+                    }
+                ],
+                "projectType": "general"
+            }
         }
     ]
 }

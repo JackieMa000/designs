@@ -8,12 +8,12 @@
 
 static mammal_t *make_cow(int weight);
 
-static void _Sheep_speak() {
+static void _Cow_speak() {
     printf("moo~~ moo~~");
 }
 
 mammal_t *make_cow(int weight) {
     mammal_t *m = make_mammal(weight);
-    m->speak = _Sheep_speak;
+    m->speak = _Cow_speak;
     return m;
 }

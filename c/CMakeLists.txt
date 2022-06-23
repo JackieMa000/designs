@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 # Turn on sanitizer for debugging
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
-    include(sanitizer.cmake)
+#    include(sanitizer.cmake)
 endif ()
 
 # Enable cMake's CTest
