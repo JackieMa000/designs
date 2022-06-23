@@ -2,3 +2,5 @@
 cmake-build-*
 target/
 out/
+*.pyc
+.DS_Store
